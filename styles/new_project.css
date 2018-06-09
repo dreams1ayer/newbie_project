@@ -1,0 +1,82 @@
+.current {
+    border-radius: 0 0 5px 5px;
+}
+.bordered {
+    border-bottom: 0px;
+    border-top: 2px solid #149bb5;
+}
+.main {
+    background-color: #eff3f7;
+    font-family: "Fira Sans";
+    margin: 0 5% 5% 5%;
+    border-radius: 5px;
+}
+.main-header {
+    background-color: #48cbe8;
+    color: white;
+    border-bottom: 15px solid #67dffa;
+    margin-bottom: 40px;
+    height: 10%;
+    border-radius: 5px 5px 0 0;
+}
+.main-header_title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: normal;
+    padding: 25px 0 10px 0;
+}
+.main-form-block {
+    margin: 2% 10% 2% 10%;
+}
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+}
+.main-form-upper-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;  
+}
+.form-titles {
+    text-align: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+.main-form__input {
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    height: 30px;
+    margin: 5px 30px 20px 0;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: #48cbe8;
+    font-family: 'Fira Sans';
+    font-weight: 300;
+    padding: 10px 0 0 10px;
+}
+.main-form__textarea {
+    border: 1px solid #48cbe8;
+    width: 100%;
+}
+.main-form__btn {
+    font-family: 'Fira Sans';
+    color: white;
+    border-radius: 3px;
+    border: none;
+    background: #149bb5;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    padding: 7px 8px 7px 8px;
+    width: 120px;
+    
+}
+.right {
+    background: #849db5;
+    box-shadow: 0 2 4px #687b8f;
+    float: right;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Homework site</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    </head>
+    <!--Тело страницы-->
+    <body class="site">
+        <!--Шапка-->
+        <!--Универсальный блок для шапки сайта-->
+        <header class="header">
+            <div class="header-logo">
+                <img src="images/logo-hor.png" alt="Логотип">              
+            </div>  
+            <ul class="header-social">      
+                <li class="header-social__list"><a class="header-social__link vk" href="#"></a></li> <!--Вот тут спросить про БЭМ!-->
+                <li class="header-social__list"><a class="header-social__link tw" href="#"></a></li>
+                <li class="header-social__list"><a class="header-social__link fb" href="#"></a></li>
+                <li class="header-social__list"><a class="header-social__link gh" href="#"></a></li>
+            </ul>
+        </header>
+        <div class="divline-header">
+        </div>
+        <!--Основной контент-->
+        <main class="content">
+            <!--Левая часть блоков контента-->
+            <div class="left-column">
+                <!--Универсальный блок меню-->
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-item current"><a class="menu-list-item__link" href="#">Обо мне</a></li>
+                        <li class="menu-list-item bordered"><a class="menu-list-item__link " href="#">Мои работы</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item__link" href="#">Связаться со мной</a></li>
+                    </ul>
+                </div>
+                <!--Универсальный блок контактов-->
+                <div class="contacts">
+                    <div class="contacts-header"><h3 class="contacts-header__text">Контакты</h3></div> <!--Почему закголовк не наследует текстовые правила родителя?-->
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <div class="contacts-list-item__mail"></div>
+                            <div><a class="contacts-list-item__link" href="#">pochta@mail.ru</a></div> <!--допускается ли общее именование элемента, одинакового для нескольких блоков?-->
+                        </li>
+                        <li class="contacts-list-item background-color-1">
+                            <div class="contacts-list-item__phone"></div>
+                            <div><a class="contacts-list-item__link" href="#">+79604753344</a></div>
+                        </li>
+                        <li class="contacts-list-item background-color-2">
+                            <div class="contacts-list-item__skype"></div>
+                            <div><a class="contacts-list-item__link" href="#">nickname</a></div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            <!--Основная часть блоков контента-->
+            <div class="main-column">
+                 <!--Блок "Основная информация"-->
+                <div class="main-column-info">
+                    <div class="main-column-info-header">
+                        <div class="header__block"><h1 class="header__title">Основная информация</h1></div>
+                    </div>
+                    <div class="main-column-info-block">
+                        <div class="info-block-image">
+                        </div>
+                        <div class="info-block-data">
+                            <ul class="info-block-list">
+                                <li class="info-block-list-item"><span class="info-block-list-item__btext">Меня зовут:</span><span class="info-block-list-item__stext">Иванов Андрей Степанович</span></li>
+                                <li class="info-block-list-item"><span class="info-block-list-item__btext">Мой возраст:</span><span class="info-block-list-item__stext">25 лет</span></li>
+                                <li class="info-block-list-item"><span class="info-block-list-item__btext">Мой город:</span><span class="info-block-list-item__stext">Санкт-Петербург, Россия</span></li>
+                                <li class="info-block-list-item"><span class="info-block-list-item__btext">Моя специализация:</span><span class="info-block-list-item__stext">Frontend разработчик</span></li>
+                                <li class="info-block-list-item"><span class="info-block-list-item__btext">Ключевые навыки:</span><ul class="info-block-list-item__ptext">
+                                                                                                                                        <li class="info-block-list-item__ptext_colored">HTML</li>
+                                                                                                                                        <li class="info-block-list-item__ptext_colored">CSS</li>
+                                                                                                                                        <li class="info-block-list-item__ptext_colored">javascript</li>
+                                                                                                                                        <li class="info-block-list-item__ptext_colored">GULP</li>
+                                                                                                                                        <li class="info-block-list-item__ptext_colored">GIT</li>
+                                                                                                                                    </ul>
+                                </li>                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Блок "Опыт работы"-->
+                <div class="main-column-experience">
+                            <div class="main-column-info-header">
+                                <div class="header__block"><h1 class="header__title">Опыт работы</h1></div>
+                            </div>
+                            <div class="main-column-experience-block">
+                                <div class="experience-block-first">
+                                    <div class="experience-block-image">
+                                    </div>
+                                    <div class="experience-block__info">
+                                        <span class="exp-block__stext">"ИП Боровицкий" - Продавец дисков</span>
+                                        <span class="exp-block__mtext">Сентябрь 2005 - Август 2008</span>
+                                    </div>
+                                </div>
+                                <div class="experience-block-second">
+                                    <div class="experience-block-image"></div>
+                                    <div class="experience-block__info">
+                                        <span class="exp-block__stext">"ООО Системы безопасности" - Системный администратор</span>
+                                        <span class="exp-block__mtext">Июнь 2008 - Июль 2010</span>
+                                    </div>
+                                </div>
+                            </div>       
+                </div>
+                <!--1Блок "Образование"-->
+                <div class="main-column-experience">
+                    <div class="main-column-info-header">
+                        <div class="header__block"><h1 class="header__title">Образование</h1></div>
+                    </div>
+                    <div class="main-column-experience-block">
+                        <div class="experience-block-first">
+                            <div class="knowledge-block-image">
+                            </div>
+                            <div class="experience-block__info">
+                                <span class="exp-block__stext">Неоконченное высшее. СПБГУ ИТМО</span>
+                                <span class="exp-block__mtext">октябрь 2015 - настоящее время</span>
+                            </div>
+                        </div>
+                        <div class="experience-block-second">
+                            <div class="knowledge-block-image-list"></div>
+                            <div class="experience-block__info">
+                                <span class="exp-block__stext_special">Курсы "Loftschool.ru"</span>
+                                <span class="exp-block__mtext_special">Ноябрь 2014 - настоящее время</span>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </main>
+        <!--Универсальный блок подвала-->
+        <footer class="footer">
+            <div class="divline">
+            </div>
+            <div class="footer-block">
+                <div class="footer-block__login"></div>
+                <span> &#169; 2015. Это мой сайт, пожалуйста не копируйте и не воруйте его</span>
+            </div>    
+        </footer>
+
+    </body>    
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Homework site</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="styles/projects.css">
+    </head>
+    <!--Тело страницы-->
+    <body class="site">
+        <!--Шапка-->
+        <!--Универсальный блок для шапки сайта-->
+        <header class="header">
+            <div class="header-logo">
+                <img src="images/logo-hor.png" alt="Логотип">              
+            </div>  
+            <ul class="header-social">      
+                <li class="header-social__list"><a class="header-social__link vk" href="#"></a></li> <!--Вот тут спросить про БЭМ!-->
+                <li class="header-social__list"><a class="header-social__link tw" href="#"></a></li>
+                <li class="header-social__list"><a class="header-social__link fb" href="#"></a></li>
+                <li class="header-social__list"><a class="header-social__link gh" href="#"></a></li>
+            </ul>
+        </header>
+        <div class="divline-header">
+        </div>
+        <!--Основной контент-->
+        <main class="content">
+            <!--Левая часть блоков контента-->
+            <div class="left-column">
+                <!--Универсальный блок меню-->
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-item current"><a class="menu-list-item__link" href="#">Обо мне</a></li>
+                        <li class="menu-list-item bordered"><a class="menu-list-item__link " href="#">Мои работы</a></li>
+                        <li class="menu-list-item"><a class="menu-list-item__link" href="#">Связаться со мной</a></li>
+                    </ul>
+                </div>
+                <!--Универсальный блок контактов-->
+                <div class="contacts">
+                    <div class="contacts-header"><h3 class="contacts-header__text">Контакты</h3></div> <!--Почему закголовк не наследует текстовые правила родителя?-->
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <div class="contacts-list-item__mail"></div>
+                            <div><a class="contacts-list-item__link" href="#">pochta@mail.ru</a></div> <!--допускается ли общее именование элемента, одинакового для нескольких блоков?-->
+                        </li>
+                        <li class="contacts-list-item background-color-1">
+                            <div class="contacts-list-item__phone"></div>
+                            <div><a class="contacts-list-item__link" href="#">+79604753344</a></div>
+                        </li>
+                        <li class="contacts-list-item background-color-2">
+                            <div class="contacts-list-item__skype"></div>
+                            <div><a class="contacts-list-item__link" href="#">nickname</a></div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            <!--Основная часть блоков контента-->
+            <div class="main-projects">
+            <!--Блок "Основная информация"-->
+                <div class="main-projects__header"><h1 class="main-projects__title">Мои работы</h1></div>
+                <div class="main-projects-data">
+                    <div class="main-projects-data-block">
+                        <div class="main-projects-data-block__image">
+                            <div class="main-projects-data-block__image_internal main-projects-data-block__image_site1"></div>
+                        </div>
+                        <a class="main-projects-data-block__link" href="#">www.site1.com</a>
+                        <div>
+                            <span class="main-projects-data-block__text">Информация о проекте 1 првеью 2 строки</span>
+                        </div>
+                    </div>
+                    <div class="main-projects-data-block">
+                        <div class="main-projects-data-block__image ">
+                            <div class="main-projects-data-block__image_internal main-projects-data-block__image_site2"></div>
+                        </div>
+                        <a class="main-projects-data-block__link" href="#">www.site1.com</a>
+                        <div>
+                            <span class="main-projects-data-block__text">Информация о проекте 1 првеью 2 строки</span>
+                        </div>
+                    </div>
+                    <div class="main-projects-data-block">
+                        <div class="main-projects-data-block__image">
+                            <div class="main-projects-data-block__image_internal main-projects-data-block__image_site3"></div>
+                        </div>
+                        <a class="main-projects-data-block__link" href="#">www.site1.com</a>
+                        <div>
+                            <span class="main-projects-data-block__text">Информация о проекте 1 првеью 2 строки</span>
+                        </div>
+                    </div>
+                    <div class="main-projects-data-block">
+                        <div class="main-projects-data-block__image">
+                            <div class="main-projects-data-block__image_internal main-projects-data-block__image_site4"></div>
+                        </div>
+                        <a class="main-projects-data-block__link" href="#">www.site1.com</a>
+                        <div>
+                            <span class="main-projects-data-block__text">Информация о проекте 1 првеью 2 строки</span>
+                        </div>
+                    </div>
+                    <div class="main-projects-data-block btn-add">
+                        <div class="main-projects-data-block__image main-projects-data-block__image_new">
+                            <div class="main-projects-data-block__image_internal main-projects-data-block__image_container">
+                                <div class="btn-add-new"></div>
+                                <span class="btn-add-new__text">Добавьте проект</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        <!--Универсальный блок подвала-->
+        <footer class="footer">
+            <div class="divline">
+            </div>
+            <div class="footer-block">
+                <div class="footer-block__login"></div>
+                <span> &#169; 2015. Это мой сайт, пожалуйста не копируйте и не воруйте его</span>
+            </div>    
+        </footer>
+
+    </body>    
+</html>

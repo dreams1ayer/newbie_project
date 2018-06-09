@@ -1,0 +1,102 @@
+.main-projects {
+    font-family: "Fira Sans";
+    height: 100%;
+    background-color: #eff3f7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 5% 0 0;
+}
+.main-projects__header {
+    height: 100%;
+    width: max-content;
+    font-size: 0.8em;
+    color:#149bb5;
+    text-align: left;
+    border-bottom: 2px solid #149bb5;
+}
+.main-projects__title {
+    margin: 10px 10px 10px 10px;
+    font-weight:100;
+}
+.main-projects-data {
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main-projects-data-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 185px;
+    margin: 10px 10px 10px 10px;
+}
+.main-projects-data-block__image {
+    width: 181px;
+    height: 127px;
+    border-radius: 5px;
+    border: 1px solid #149bb5;
+    background-color: #149bb5;
+}
+.main-projects-data-block__image_site1 {
+    background: url(../images/site1.png);
+}
+.main-projects-data-block__image_site2 {
+    background: url(../images/site2.png);
+}
+.main-projects-data-block__image_site3 {
+    background: url(../images/site3.png);
+}
+.main-projects-data-block__image_site4 {
+    background: url(../images/site4.png);
+}
+.main-projects-data-block__image_new {
+    background-color: #149bb5;
+    border-style: dashed;
+    margin: 0 0 73px 0;
+}
+.main-projects-data-block__link {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #149bb5;
+    text-decoration-line: none;
+    text-align: center;
+    margin: 10px auto 8px auto;
+}
+.main-projects-data-block__text {
+    text-align: center;
+}
+.main-projects-data-block__image_internal:hover {
+    opacity: 0.5;
+}
+.main-projects-data-block__image_internal {
+    height: 127px;;
+}
+.main-projects-data-block__image_new:hover {
+    opacity: 0.5;
+}
+.main-projects-data-block__image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #edf8fc;
+    border-radius: 5px;
+} 
+.btn-add-new {
+    background: url(../images/add_proj2.png);
+    background-repeat: round;
+    height: 32px;
+    width: 32px;
+}
+.btn-add-new__text {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #149bb5;
+    text-decoration-line: none;
+    text-align: center;
+    margin: 10px auto 8px auto;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Homework site</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/new_project.css">
+    </head>
+    <!--Тело страницы-->
+    <body class="site">
+        <!--Шапка-->
+        <!--Универсальный блок для шапки сайта-->
+        <header class="header">
+            <div class="header-logo">
+                <img src="images/logo-hor.png" alt="Логотип">              
+            </div>  
+            <ul class="header-social">      
+                <li class="header-social__list"><a class="header-social__link vk" href="#"></a></li> <!--Вот тут спросить про БЭМ!-->
+                <li class="header-social__list"><a class="header-social__link tw" href="#"></a></li>
+                <li class="header-social__list"><a class="header-social__link fb" href="#"></a></li>
+                <li class="header-social__list"><a class="header-social__link gh" href="#"></a></li>
+            </ul>
+        </header>
+        <div class="divline-header">
+        </div>
+        <!--Основной контент-->
+        <main class="content">
+            <!--Левая часть блоков контента-->
+            <div class="left-column">
+                <!--Универсальный блок меню-->
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-item"><a class="menu-list-item__link" href="#">Обо мне</a></li>
+                        <li class="menu-list-item bordered"><a class="menu-list-item__link " href="#">Мои работы</a></li>
+                        <li class="menu-list-item current"><a class="menu-list-item__link" href="#">Связаться со мной</a></li>
+                    </ul>
+                </div>
+                <!--Универсальный блок контактов-->
+                <div class="contacts">
+                    <div class="contacts-header"><h3 class="contacts-header__text">Контакты</h3></div> <!--Почему закголовк не наследует текстовые правила родителя?-->
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <div class="contacts-list-item__mail"></div>
+                            <div><a class="contacts-list-item__link" href="#">pochta@mail.ru</a></div> <!--допускается ли общее именование элемента, одинакового для нескольких блоков?-->
+                        </li>
+                        <li class="contacts-list-item background-color-1">
+                            <div class="contacts-list-item__phone"></div>
+                            <div><a class="contacts-list-item__link" href="#">+79604753344</a></div>
+                        </li>
+                        <li class="contacts-list-item background-color-2">
+                            <div class="contacts-list-item__skype"></div>
+                            <div><a class="contacts-list-item__link" href="#">nickname</a></div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            <!--Основная часть блоков контента-->
+            <div class="main">
+                <div class="main-header">
+                    <h1 class="main-header_title">У Вас интересный проект? Напишите мне!</h1>
+                </div>
+                <div class="main-form-block">
+                    <form class="main-form">
+                        <div class="main-form-upper-block">
+                            <div>
+                                <h2 class="form-titles">Имя</h2>
+                                <input class="main-form__input" type="text" name="user_name" placeholder="Как вас зовут?">
+                            </div>
+                            <div>
+                                <h2 class="form-titles">Email</h2>
+                                <input class="main-form__input" type="text" name="email" placeholder="Куда мне писать?">
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="form-titles">Сообщение</h2>
+                            <textarea class="main-form__textarea" name="comment" cols="60" rows="20" placeholder="Кратко в чем суть"></textarea>
+                            <input class="main-form__btn" type="submit" value="Отправить">
+                            <input class="main-form__btn right" type="reset" value="Очистить">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+        <!--Универсальный блок подвала-->
+        <footer class="footer">
+            <div class="divline">
+            </div>
+            <div class="footer-block">
+                <div class="footer-block__login"></div>
+                <span> &#169; 2015. Это мой сайт, пожалуйста не копируйте и не воруйте его</span>
+            </div>    
+        </footer>
+
+    </body>    
+</html>

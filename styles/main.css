@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face { /*Почему не грузится общий шрифт?*/
+    font-family: "Fira Sans";
+    src: url("../fonts/FiraSansRegular/FiraSansRegular.woff");
+    font-style: normal;
+    font-weight: normal;
+}
+.site {
+    background-image: url(../images/bg.jpg);
+    background-color: #FFFFFF;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    min-width: 1200px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.header {
+    width: 100%;
+    margin-top: 0%;
+    height: 120px;
+    background-color: rgb(239,243,247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.header-logo {
+    margin-left: 5%;
+}
+.header-social {
+    margin-right: 5%;
+}
+.header-social__list {
+    list-style-image: none;
+    list-style-type: none;
+    margin-right: 25px;
+    float:left;
+}
+.header-social__list:last-child {
+    margin-right: 0;
+}
+.header-social__link {
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 50%; 
+}
+.vk {
+    background: url("../images/vk-logo.png");
+    background-repeat: round;
+}
+.tw {
+    background: url("../images/tw-logo.png");
+    background-repeat: round;
+}
+.fb {
+    background: url("../images/fb-logo.png");
+    background-repeat: round;
+}
+.gh {
+    background: url("../images/gh-logo.png");
+    background-repeat: round;
+}
+.vk:hover {
+    background: url("../images/vk-logo-hover.png");
+    background-repeat: round;
+}
+.tw:hover {
+    background: url("../images/tw-logo-hover.png");
+    background-repeat: round;
+}
+.fb:hover {
+    background: url("../images/fb-logo-hover.png");
+    background-repeat: round;
+}
+.gh:hover {
+    background: url("../images/gh-logo-hover.png");
+    background-repeat: round;
+}
+.content {
+    display: flex;
+    justify-content: center;  /*Почему блоки не центрируются? При уменьшении расстояние между блоками увеличивается*/
+    flex: 1;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+    width: 250px;
+    background-color: #eff3f7;
+    border-radius: 5px;
+    margin-bottom: 10%; 
+}
+.menu-list {
+    font-size: 1.2rem;
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    font-weight:300;
+    color: black;
+    list-style-image: none;
+    list-style-type: none;
+}
+.menu-list-item {
+    height: 60px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list-item__link {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    color: inherit;
+}
+.current {
+    background-color: #3ba8c0;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+.menu-list-item__link:hover {
+    color: #3ba8c0;
+}
+.bordered {
+    border-bottom: 2px solid  #3ba8c0;
+    margin: 0% 5% 0 5%;
+    width: 90%;
+}
+.contacts {
+    width: 250px;
+    background-color: #eff3f7;
+    border-radius: 5px;
+}
+.contacts-header {
+    background-color: #3ba8c0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0;
+    height: 20px;
+}
+.contacts-header__text {
+    text-align: left;
+    font-size: 1.3em;
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+.contacts-list {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Fira Sans';
+    text-decoration: none;
+    color: white;
+    font-weight:300;
+}
+.contacts-list-item {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    list-style-image: none;
+    list-style-type: none;
+    background-color: #41b9d4;
+}
+.contacts-list-item__link {
+    display: block;
+    padding-top: 10px;
+    margin-left: 15px;
+    color: inherit;
+} 
+.contacts-list-item__mail {
+    background-image: url(../images/mail.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 21px;
+    margin: auto 5px auto 40px;
+}
+.background-color-1 {
+    background-color: #48cbe8;
+}
+.contacts-list-item__phone {
+    background-image: url(../images/phone.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 19px;
+    margin: auto 5px auto 40px;
+}
+.background-color-2 {
+    background-color: #51daf8;
+}
+.contacts-list-item__skype {
+    background-image: url(../images/skype.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: auto 5px auto 40px;
+}
+.contacts-list-item__link:hover {
+    text-decoration-line: underline;
+} 
+.divline-header {
+    margin-bottom: 5%;
+    border: 0;
+    height: 3px;
+    background: #1c667a;
+    background-image: -webkit-linear-gradient(left, #fff, #1c667a, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #1c667a, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #1c667a, #fff);
+    background-image: -o-linear-gradient(left, #fff, #1c667a, #fff);
+}
+.divline {
+    border: 0;
+    height: 3px;
+    background: #1c667a;
+    background-image: -webkit-linear-gradient(left, #fff, #1c667a, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #1c667a, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #1c667a, #fff);
+    background-image: -o-linear-gradient(left, #fff, #1c667a, #fff);
+}
+.footer {
+    width: 100%;
+    background-color: rgb(239,243,247);
+    height: 77px;
+}
+.footer-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77px;
+    width: 100%;
+}
+.footer span {
+    display: block;
+    font-family: 'Fira Sans Light';
+}
+.footer-block__login {
+    background: url("../images/logged-in.png");
+    height: 32px;
+    width: 20px;
+    margin-right: 10%; 
+}
